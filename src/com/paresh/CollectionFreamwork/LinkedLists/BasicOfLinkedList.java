@@ -2,6 +2,27 @@ package com.paresh.CollectionFreamwork.LinkedLists;
 
 public class BasicOfLinkedList {
 
+    public static int lengthOfLinkedList(Node head){
+        int count = 0;
+        while(head != null){
+            count++;
+            head = head.next;
+        }
+        return count;
+    }
+    // Recursive function for printing LinkedList.
+    public static void displayRecursively(Node head){
+        if (head == null){
+            System.out.println("End");
+            return;
+        }
+        System.out.print(head.data + " --> ");
+        displayRecursively(head.next);
+
+        // displayRecursively(head.next);
+        // System.out.print(head.data + " --> ");
+    }
+
     public static void display(Node head){
         Node temp = head;
         while (temp != null){
@@ -31,5 +52,8 @@ public class BasicOfLinkedList {
         c.next = d;
 
         display(a);
+        displayRecursively(a);
+
+        System.out.println("Length of LinkedList: " + lengthOfLinkedList(a));
     }
 }
