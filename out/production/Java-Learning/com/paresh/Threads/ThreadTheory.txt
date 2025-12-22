@@ -1,0 +1,57 @@
+# THREAD
+                        
+--> A thread in Java is a lightweight process that allows concurrent 
+    execution of code. 
+
+--> It is a separate path of execution within a program, enabling 
+    multitasking and efficient use of CPU resources.
+
+--> com.paresh.Interface.Threads can be created by extending the Thread class or
+    implementing the Runnable interface.
+
+
+# THREAD LIFE CYCLE
+
+**NEW** --> The thread is created but not yet started.
+
+**RUNNABLE** --> The thread is ready to run and waiting for CPU time.
+
+**BLOCKED** --> The thread is blocked and waiting for a monitor lock.
+
+**WAITING** --> The thread is waiting indefinitely for another thread to perform a particular action.
+
+**TIMED WAITING** --> The thread is waiting for another thread to perform an action for up to a specified waiting time.
+
+**TERMINATED** --> The thread has completed its execution.
+
+
+# THREAD VS RUNNABLE
+
+--> Thread
+    - Extending the Thread class means that your class cannot extend any other class.
+    - Each thread creates a unique object and associates with it.
+    - More overhead as it involves creating a new thread instance.
+
+--> Runnable
+    - Implementing the Runnable interface allows your class to extend another class.
+    - Multiple threads can share the same object.
+    - Less overhead as it does not create a new thread instance.
+
+
+# COMMON THREAD METHODS
+
+1 : start() --> Starts the execution of the thread.
+2 : run() --> Contains the code to be executed by the thread.
+3 : getId() --> Returns the thread's unique ID.
+4 : getName() --> Returns the name of the thread.
+5 : setName(String name) --> Sets the name of the thread.
+6 : getPriority() --> Returns the priority of the thread.
+7 : setPriority(int priority) --> Sets the priority of the thread.
+8 : getState() --> Returns the state of the thread.
+9 : isAlive() --> Tests if the thread is alive.
+10: join() --> Waits for the thread to die.
+11: sleep(long millis) --> Causes the thread to sleep for the specified number of milliseconds.
+12: interrupt() --> Interrupts the thread.
+13: isInterrupted() --> Tests if the thread has been interrupted.
+14: yield() --> Causes the currently executing thread object to temporarily pause and allow other threads to execute.
+
