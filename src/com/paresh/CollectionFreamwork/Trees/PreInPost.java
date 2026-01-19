@@ -1,5 +1,7 @@
 package com.paresh.CollectionFreamwork.Trees;
 
+// Time Complexity: --> O(n), if n = no. of level --> O(n^2)
+
 public class PreInPost {
 
     public static class Node{
