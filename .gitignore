@@ -1,0 +1,22 @@
+# IntelliJ
+.idea/
+*.iml
+
+# Compiled files
+out/
+*.class
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build tools (if used later)
+target/
+build/
+
+# Temporary files
+*.tmp
+*.swp
