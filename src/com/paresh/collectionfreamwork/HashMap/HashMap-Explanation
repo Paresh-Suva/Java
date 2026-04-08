@@ -1,0 +1,30 @@
+WHAT IS HASHMAP?
+
+HashMap is a data structure that stores data in (key, value) pairs.
+
+Think like:
+Key → Value
+
+Example:
+Roll Number → Student Name
+2 → "Rahul"
+
+IMPORTANT PROPERTIES:
+1. Keys are UNIQUE
+2. Values can be duplicate
+3. Order is NOT guaranteed
+4. Operations (get, put, remove) are O(1) average
+
+HOW IT WORKS INTERNALLY (IMPORTANT):
+- Uses hashing
+- Key → hash function → index
+- Stores value at that index
+
+WHY IT IS POWERFUL:
+Instead of searching O(n), we get O(1)
+
+COMMON METHODS:
+map.put(key, value)
+map.get(key)
+map.containsKey(key)
+map.remove(key)

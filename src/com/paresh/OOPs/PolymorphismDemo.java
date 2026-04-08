@@ -41,7 +41,7 @@ class Department {
 
 // Main class
 public class PolymorphismDemo {
-    public static void main(String[] args) {
+    static void main(String[] args) {
         // Runtime polymorphism demonstration
         Employee employee;
 

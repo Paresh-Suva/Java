@@ -25,7 +25,7 @@ class Tesla implements ElectricVehicle {
 
 // Main class
 public class HybridInheritanceDemo {
-    public static void main(String[] args) {
+    static void main(String[] args) {
         Tesla tesla = new Tesla();
         tesla.start();          // From Vehicle interface
         tesla.chargeBattery();  // From ElectricVehicle interface

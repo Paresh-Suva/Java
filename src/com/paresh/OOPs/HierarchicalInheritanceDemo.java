@@ -23,7 +23,7 @@ class Rectangle extends Shape {
 
 // Main class
 public class HierarchicalInheritanceDemo {
-    public static void main(String[] args) {
+    static void main(String[] args) {
         Circle myCircle = new Circle();
         myCircle.draw(); // Inherited method from Shape
         myCircle.area(); // Method of Circle

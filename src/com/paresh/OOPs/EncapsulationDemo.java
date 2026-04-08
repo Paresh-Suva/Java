@@ -21,8 +21,8 @@ class Student {
 }
 
 public class EncapsulationDemo {
-    public static void main(String[] args) {
-    	Student S1 = new Student();
+    static void main(String[] args) {
+        Student S1 = new Student();
 
         Scanner scanner = new Scanner(System.in);
 

@@ -36,7 +36,7 @@ class Male extends Person {
 
 // Main class
 public class ThisAndSuperDemo {
-    public static void main(String[] args) {
+    static void main(String[] args) {
         // Creating a Student object
         Male male = new Male("Paresh", 101);
 

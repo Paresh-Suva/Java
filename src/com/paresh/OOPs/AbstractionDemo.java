@@ -2,7 +2,7 @@ package com.paresh.OOPs;
 
 // com.paresh.Abstract class representing a generic College
 abstract class College {
-    private String collegeName;
+    private final String collegeName;
 
     // Constructor to set college name
     public College(String collegeName) {
@@ -56,7 +56,7 @@ class ManagementCollege extends College {
 
 // Main class
 public class AbstractionDemo {
-    public static void main(String[] args) {
+    static void main(String[] args) {
         // Engineering College example
         College engineeringCollege = new EngineeringCollege("ABC Engineering College");
         engineeringCollege.displayCollegeName();
